@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-15T11:33:02 BDT" name="Default Suite" finished-at="2024-02-15T11:33:11 BDT" duration-ms="9007">
+    <groups>
+    </groups>
+    <test started-at="2024-02-15T11:33:02 BDT" name="rest-assured-project2" finished-at="2024-02-15T11:33:11 BDT" duration-ms="9007">
+      <class name="APITests">
+        <test-method signature="ResetNID()[pri:0, instance:APITests@2c34f934]" started-at="2024-02-15T11:33:02 BDT" name="ResetNID" finished-at="2024-02-15T11:33:03 BDT" duration-ms="1101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResetNID -->
+        <test-method signature="ResetNID2()[pri:0, instance:APITests@2c34f934]" started-at="2024-02-15T11:33:03 BDT" name="ResetNID2" finished-at="2024-02-15T11:33:03 BDT" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResetNID2 -->
+        <test-method signature="signUp()[pri:0, instance:APITests@2c34f934]" started-at="2024-02-15T11:33:03 BDT" name="signUp" finished-at="2024-02-15T11:33:05 BDT" duration-ms="1830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="szNID_front_Pic()[pri:0, instance:APITests@2c34f934]" started-at="2024-02-15T11:33:05 BDT" name="szNID_front_Pic" finished-at="2024-02-15T11:33:06 BDT" duration-ms="1494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- szNID_front_Pic -->
+        <test-method signature="szNID_z_back_Pic()[pri:0, instance:APITests@2c34f934]" started-at="2024-02-15T11:33:06 BDT" name="szNID_z_back_Pic" finished-at="2024-02-15T11:33:07 BDT" duration-ms="1147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- szNID_z_back_Pic -->
+        <test-method signature="szz_confirm_NID()[pri:0, instance:APITests@2c34f934]" started-at="2024-02-15T11:33:07 BDT" name="szz_confirm_NID" finished-at="2024-02-15T11:33:08 BDT" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- szz_confirm_NID -->
+        <test-method signature="szz_face_pic()[pri:0, instance:APITests@2c34f934]" started-at="2024-02-15T11:33:08 BDT" name="szz_face_pic" finished-at="2024-02-15T11:33:09 BDT" duration-ms="1030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- szz_face_pic -->
+        <test-method signature="szz_pin_set()[pri:0, instance:APITests@2c34f934]" started-at="2024-02-15T11:33:09 BDT" name="szz_pin_set" finished-at="2024-02-15T11:33:09 BDT" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- szz_pin_set -->
+        <test-method signature="szz_pz_login()[pri:0, instance:APITests@2c34f934]" started-at="2024-02-15T11:33:09 BDT" name="szz_pz_login" finished-at="2024-02-15T11:33:10 BDT" duration-ms="773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- szz_pz_login -->
+        <test-method signature="szz_pzz_MFS_bkash()[pri:0, instance:APITests@2c34f934]" started-at="2024-02-15T11:33:10 BDT" name="szz_pzz_MFS_bkash" finished-at="2024-02-15T11:33:11 BDT" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- szz_pzz_MFS_bkash -->
+      </class> <!-- APITests -->
+    </test> <!-- rest-assured-project2 -->
+  </suite> <!-- Default Suite -->
+</testng-results>
