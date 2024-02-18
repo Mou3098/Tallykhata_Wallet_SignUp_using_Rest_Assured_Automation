@@ -8,13 +8,26 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
 
 public class APITests {
-    private String wallet_no="01777638319";
+
+    private static final Properties properties = new Properties();
+    static {
+        try {
+            // Load properties from application.properties file
+            FileInputStream fileInputStream = new FileInputStream("src/test/java/application.properties");
+            properties.load(fileInputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+   // private String wallet_no="01787132671";
+   String wallet_no = properties.getProperty("wallet_no");
     private String Token_glob;
     @Test
     void ResetNID(){
@@ -43,6 +56,8 @@ public class APITests {
     @Test
     void signUp() throws ParseException, JSONException {
         JSONObject requestBody = new JSONObject();
+
+
 
         requestBody.put("device_id", "ed28056ae2cb48e5");
         requestBody.put("mobile_number", wallet_no);
@@ -77,7 +92,9 @@ public class APITests {
     void szNID_front_Pic() throws JSONException, IOException {
         JSONObject requestBody = new JSONObject();
 
-        String front_pic = new String(Files.readAllBytes(Paths.get("D://m/front.txt")));
+        //String front_pic = new String(Files.readAllBytes(Paths.get("D://m/front.txt")));// to get data from local device
+        String front_pic = properties.getProperty("nid_front");
+
 
         //requestBody.put("nidNo", null);
         requestBody.put("nidType", "LEGACY_NID");
@@ -111,7 +128,8 @@ public class APITests {
     void szNID_z_back_Pic() throws JSONException, IOException {
         JSONObject requestBody = new JSONObject();
 
-        String back_pic = new String(Files.readAllBytes(Paths.get("D://m/back.txt")));
+        //String back_pic = new String(Files.readAllBytes(Paths.get("D://m/back.txt")));
+        String back_pic = properties.getProperty("nid_back");
 
         requestBody.put("nidNo", "6904235154");
         requestBody.put("nidType", "LEGACY_NID");
@@ -181,7 +199,8 @@ public class APITests {
     @Test
     void szz_face_pic() throws JSONException, IOException {
         JSONObject requestBody = new JSONObject();
-        String face_pic = new String(Files.readAllBytes(Paths.get("D://m/face.txt")));
+        //String face_pic = new String(Files.readAllBytes(Paths.get("D://m/face.txt")));
+        String face_pic = properties.getProperty("profile_picture");
 
         requestBody.put("profilePicture",face_pic);
         requestBody.put("requestId",wallet_no);

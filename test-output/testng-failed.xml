@@ -5,6 +5,12 @@
     <classes>
       <class name="APITests">
         <methods>
+          <include name="szz_pin_set"/>
+          <include name="szz_pzz_MFS_bkash"/>
+          <include name="szz_confirm_NID"/>
+          <include name="szNID_front_Pic"/>
+          <include name="szNID_z_back_Pic"/>
+          <include name="signUp"/>
           <include name="szz_face_pic"/>
         </methods>
       </class> <!-- APITests -->
